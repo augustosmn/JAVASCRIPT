@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual é o seu país? <input type="text" name="pais" id="ipais"> <br>
+    <input type="button" value="Então..." onclick="calculo()">
+    <p id="res"></p>
+    <script>
+        function calculo(){
+            var a = document.getElementById('ipais')
+            var b = document.getElementById('res')
+            b.innerText = 'Para mim você é: '
+            if (a.value == 'Brasil'){
+                b.innerHTML += '<strong>Brasileiro</strong>'
+            }else{
+                b.innerHTML += '<strong>Estrangeiro</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Qual era a sua velocidade? <input type="number" name="vel" id="ivel"> Km/h <br>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var a = document.getElementById('ivel')
+            var b = Number(a.value)
+            var c = document.getElementById('res')
+            c.innerHTML = `Com a sua velocidade sendo de <strong>${b} Km/h</strong>, você se encontra: `
+            if (b>80){
+                c.innerHTML += '<strong>Multado</strong>'
+            }else{
+                c.innerHTML += '<strong>Sem pendências</strong>'
+            }
+    }
+    </script>
+</body>
+</html>
