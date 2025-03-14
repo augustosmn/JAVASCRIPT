@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <form action="#">
+            <p>
+                <label for="iano">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="iano" required>
+            </p>
+            <p>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="im"> Masculino
+                <input type="radio" name="sexo" id="if"> Feminino
+            </p>
+            <p>
+                <input id="enviar" type="button" value="Verificar" onclick="carregar()">
+            </p>
+        </form>
+        <div id="txt">texto</div>
+        <div id="fotos">
+            <img id="img" src="" alt="foto representativa da idade">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;AugustoSimionato</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
