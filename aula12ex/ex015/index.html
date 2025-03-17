@@ -13,21 +13,21 @@
     <section>
         <form action="#">
             <p>
-                <label for="iano">Ano de Nascimento:</label>
-                <input type="number" name="ano" id="iano" required>
+                <strong>Ano de Nascimento: </strong><input type="number" name="ano" id="iano" required>
             </p>
             <p>
-                <label for="sexo">Sexo:</label>
-                <input type="radio" name="sexo" id="im"> Masculino
-                <input type="radio" name="sexo" id="if"> Feminino
+                <strong>Sexo: </strong><input type="radio" name="sexo" id="im" checked>
+                <label for="im"> Masculino</label>
+                <input type="radio" name="sexo" id="if">
+                <label for="if"> Feminino</label>
             </p>
             <p>
                 <input id="enviar" type="button" value="Verificar" onclick="carregar()">
             </p>
         </form>
-        <div id="txt">texto</div>
+        <div id="txt"></div>
         <div id="fotos">
-            <img id="img" src="" alt="foto representativa da idade">
+            <img id="img" src="" alt="">
         </div>
     </section>
     <footer>
